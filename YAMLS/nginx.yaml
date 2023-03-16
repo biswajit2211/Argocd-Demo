@@ -1,7 +1,7 @@
 apiversion: apps/v1
 kind: Deployment
 metadata:
-  name: mynginx
+  name: myspringbootapp
 spec:
   selector:
     matchLabels:
@@ -12,5 +12,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - name: nginxContainer
-        image: nginx
+      - name: MyContainer
+        image: biswajitmohapatra22/springboot-application
+        ports:
+        - containerPort: 8085

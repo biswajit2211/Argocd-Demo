@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: biswajitmohapatra22/springboot-application
+        image: biswajitmohapatra22/ultimate-cicd:22
         ports:
-        - containerPort: 8085
+        - containerPort: 8080
